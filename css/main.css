@@ -1,0 +1,27 @@
+
+html, body {height: 100%}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {text-decoration: underline}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fraunces', serif;
+}
+
+.logo {
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+    color: #f96;
+}
+
+.slogan {
+    font-family: 'Fraunces', serif;
+}

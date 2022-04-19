@@ -1,0 +1,61 @@
+
+@media all and (max-width: 800px) {
+    
+    #main .mockup {
+        display: none;
+    }
+
+}
+
+@media all and (max-width: 600px) {
+
+    header nav:not(.mobile) {
+        display: none;
+    }
+
+    header .mobile {
+        display: block;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    background-color: #f96;
+    z-index: 15;
+    padding: 25px;
+    clip-path: circle(200% at 100% 0);
+    transition: clip-path .5s ease-in-out;
+}
+.mobile-menu.off {
+    pointer-events: none;
+    clip-path: circle(0 at 100% 0);
+}
+
+.mobile-menu i {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: #fff;
+}
+
+.mobile-menu a {
+    display: block;
+    font-family: 'Fraunces', serif;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.mobile-menu .logo {
+    font-size: 2em;
+}

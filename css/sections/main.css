@@ -1,0 +1,35 @@
+
+#main {
+    display: flex;
+    gap: 0 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+    height: 100%;
+
+    margin: 0 auto;
+    max-width: calc(100% - 100px);
+}
+
+#main .mockup {
+    height: 450px;
+    animation: bobbing 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes bobbing {
+    from {transform: translateY(-5px)}
+    to   {transform: translateY(5px)}
+}
+
+#main .logo {
+    font-size: 5em;
+    margin: 0;
+}
+
+#main .slogan {
+    font-family: 'Fraunces', serif;
+    font-weight: normal;
+    color: #555;
+}
